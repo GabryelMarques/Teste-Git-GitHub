@@ -8,3 +8,7 @@ class Grafo:
         self.grafo[u-1][v-1] = peso #trocar = por += ser for grafo mùltiplo
         self.grafo[v-1][u-1] = peso 
         
+    def mostra_matriz(self):
+        print("A matriz de Distâncias é")
+        for i in range(self.vertices):
+            print(self.grafo[i])
